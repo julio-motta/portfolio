@@ -1,64 +1,89 @@
-<!DOCTYPE html><html lang="pt-br">
+
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Julio Cesar da Silva Motta | Desenvolvedor</title>
+  <title>Portfólio - Julio Cesar</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      background: #0f172a;
+      color: #f8fafc;
       margin: 0;
       padding: 0;
-      color: #333;
     }
     header {
-      background: #222;
-      color: #fff;
+      background: #1e293b;
       padding: 20px;
       text-align: center;
     }
-    section {
-      max-width: 800px;
-      margin: 20px auto;
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .container {
       padding: 20px;
-      background: #fff;
+      max-width: 800px;
+      margin: auto;
+    }
+    .projeto {
+      background: #1e293b;
+      margin: 15px 0;
+      padding: 15px;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
-    h1, h2 {
+    h2 {
       margin-top: 0;
-    }
-    .project {
-      margin-bottom: 20px;
+      color: #38bdf8;
     }
     .btn {
       display: inline-block;
-      padding: 8px 12px;
-      background: #007bff;
-      color: #fff;
+      padding: 10px 15px;
+      margin-top: 10px;
+      background: #38bdf8;
+      color: #0f172a;
       text-decoration: none;
-      border-radius: 4px;
+      border-radius: 5px;
+      font-weight: bold;
     }
     footer {
       text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #666;
+      padding: 15px;
+      background: #1e293b;
+      margin-top: 20px;
+    }
+    .social a {
+      color: #38bdf8;
+      margin: 0 10px;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Julio Cesar da Silva Motta</h1>
-    <p>Desenvolvedor em formação | Javascript & Python</p>
-  </header>  <section>
-    <h2>Sobre Mim</h2>
-    <p>
-      Sou apaixonado por tecnologia e estou iniciando minha jornada como desenvolvedor. Tenho estudado Javascript e Python com dedicação e estou em busca da minha primeira oportunidade profissional na area
-      <a class="btn" href="todo.html" target="_blank">Ver C\to-do list
-      </a>
-      <div class="projeto">
-  <h2>Projeto Leitor de Arquivos (Python)</h2>
-  <p>Script simples que lê um arquivo .txt e conta o número de linhas.</p>
-  <a class="btn" href="https://github.com/julio-motta/portfolio/blob/main/leitor_arquivos.py" target="_blank">Ver Código</a>
-</div>
+    <p>Desenvolvedor Júnior | JavaScript & Python</p>
+  </header>
+  <div class="container">
+    <div class="projeto">
+      <h2>To-Do List (JavaScript)</h2>
+      <p>Aplicação web simples para adicionar tarefas do dia a dia.</p>
+      <a class="btn" href="todo.html" target="_blank">Ver Projeto</a>
+    </div>
+    <div class="projeto">
+      <h2>Leitor de Arquivos (Python)</h2>
+      <p>Script que lê um arquivo .txt e conta as linhas contidas nele.</p>
+      <a class="btn" href="https://github.com/julio-motta/portfolio/blob/main/leitor_arquivos.py" target="_blank">Ver Código</a>
+    </div>
+  </div>
+  <footer>
+    <p class="social">
+      <a href="https://github.com/julio-motta" target="_blank">GitHub</a> |
+      <a href="#" target="_blank">LinkedIn (adicione aqui)</a>
+    </p>
+    <p>© 2025 Julio Cesar. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
