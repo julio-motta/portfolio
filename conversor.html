@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conversor de Moedas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+    input, select, button {
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      background-color: #38bdf8;
+      color: #0f172a;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Conversor de Moedas</h1>
+    <input type="number" id="valor" placeholder="Valor em Reais (BRL)" />
+    <select id="moeda">
+      <option value="USD">Dólar (USD)</option>
+      <option value="EUR">Euro (EUR)</option>
+    </select>
+    <button onclick="converter()">Converter</button>
+    <p id="resultado"></p>
+  </div>
+
+  <script>
+    function converter() {
+      const valor = parseFloat(document.getElementById('valor').value);
+      const moeda = document.getElementById('moeda').value;
+      let taxa = 0;
+      
+      if (moeda === 'USD') {
+        taxa = 5.0; // 1 USD = 5 BRL (exemplo)
+      } else if (moeda === 'EUR') {
+        taxa = 5.5; // 1 EUR = 5.5 BRL (exemplo)
+      }
+
+      const convertido = valor / taxa;
+      document.getElementById('resultado').innerText = 
+        `R$ ${valor.toFixed(2)} = ${convertido.toFixed(2)} ${moeda}`;
+    }
+  </script>
+</body>
+</html>
