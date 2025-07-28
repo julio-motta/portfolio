@@ -3,32 +3,23 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>To-Do List</title>
-  <style>
-    body { font-family: Arial; background: #f0f0f0; padding: 20px; }
-    h1 { color: #333; }
-    input { padding: 8px; width: 200px; }
-    button { padding: 8px; }
-    ul { list-style: none; padding: 0; }
-    li { background: #fff; margin: 5px 0; padding: 8px; border-radius: 4px; }
-  </style>
 </head>
 <body>
-  <h1>To-Do List</h1>
-  <input id="taskInput" type="text" placeholder="Digite uma tarefa" />
-  <button onclick="addTask()">Adicionar</button>
-  <ul id="taskList"></ul>
+  <h1>Minha To-Do List</h1>
+  <input type="text" id="tarefa" placeholder="Digite uma tarefa" />
+  <button onclick="adicionarTarefa()">Adicionar</button>
+  <ul id="lista"></ul>
 
   <script>
-    function addTask() {
-      const input = document.getElementById('taskInput');
-      const task = input.value.trim();
-      if (task) {
-        const li = document.createElement('li');
-        li.textContent = task;
-        document.getElementById('taskList').appendChild(li);
-        input.value = '';
-      }
+    function adicionarTarefa() {
+      const tarefaInput = document.getElementById('tarefa');
+      const lista = document.getElementById('lista');
+      const novaTarefa = document.createElement('li');
+      novaTarefa.textContent = tarefaInput.value;
+      lista.appendChild(novaTarefa);
+      tarefaInput.value = '';
     }
   </script>
 </body>
