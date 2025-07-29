@@ -1,95 +1,130 @@
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio - Julio Cesar</title>
+  <title>Julio Motta | Desenvolvedor Web</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #f8fafc;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
     }
     header {
-      background: #1e293b;
-      padding: 20px;
       text-align: center;
+      padding: 50px 20px;
+      background: rgba(0, 0, 0, 0.6);
     }
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
     }
-    .container {
-      padding: 20px;
-      max-width: 800px;
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
       margin: auto;
     }
-    .projeto {
-      background: #1e293b;
-      margin: 15px 0;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    .projects, .courses, .contact {
+      background: rgba(255, 255, 255, 0.05);
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 10px;
     }
     h2 {
-      margin-top: 0;
-      color: #38bdf8;
+      text-align: center;
+      margin-bottom: 20px;
     }
-    .btn {
-      display: inline-block;
-      padding: 10px 15px;
-      margin-top: 10px;
-      background: #38bdf8;
-      color: #0f172a;
+    a {
+      color: #1abc9c;
       text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
+    }
+    .project-list a {
+      display: block;
+      margin: 10px 0;
+    }
+    .social-icons img {
+      width: 30px;
+      margin: 0 10px;
+      vertical-align: middle;
     }
     footer {
       text-align: center;
-      padding: 15px;
-      background: #1e293b;
-      margin-top: 20px;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
     }
-    .social a {
-      color: #38bdf8;
-      margin: 0 10px;
-      text-decoration: none;
+    input, textarea {
+      width: 100%;
+      margin: 5px 0 15px;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+    .btn {
+      background-color: #1abc9c;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background-color: #16a085;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8em; }
+      .social-icons img { width: 24px; }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Julio Cesar da Silva Motta</h1>
-    <p>Desenvolvedor Júnior | JavaScript & Python</p>
-    <a class="btn" href="curriculo_julio_motta_v2.pdf" download>📄 Baixar Currículo</a>
+    <p>Desenvolvedor Web | Em busca do primeiro sonho realizado 🚀</p>
+    <div class="social-icons">
+      <a href="https://github.com/julio-motta" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" /></a>
+      <a href="mailto:juliomotta1721@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" /></a>
+    </div>
   </header>
-  <div class="container">
-    <div class="projeto">
-      <h2>To-Do List (JavaScript)</h2>
-      <p>Aplicação web simples para adicionar tarefas do dia a dia.</p>
-      <a class="btn" href="todo.html" target="_blank">Ver Projeto</a>
+
+  <section class="about">
+    <h2>Sobre Mim</h2>
+    <p>Sou um desenvolvedor apaixonado por tecnologia, atualmente buscando minha primeira oportunidade no mercado de TI. Tenho grande vontade de aprender, crescer e contribuir com projetos incríveis. Estou sempre em evolução e determinado a fazer parte do futuro da programação.</p>
+  </section>
+
+  <section class="projects">
+    <h2>Projetos</h2>
+    <div class="project-list">
+      <a href="https://julio-motta.github.io/to-do-list" target="_blank">📝 Lista de Tarefas (To-Do List)</a>
+      <a href="https://julio-motta.github.io/conversor-moedas" target="_blank">💱 Conversor de Moedas</a>
+      <a href="#" target="_blank">🎮 Jogo da Velha (em breve)</a>
     </div>
-    <div class="projeto">
-      <h2>Leitor de Arquivos (Python)</h2>
-      <p>Script que lê um arquivo .txt e conta as linhas contidas nele.</p>
-      <a class="btn" href="leitor_arquivos.py" target="_blank">Ver Código</a>
-    </div>
-    <div class="projeto">
-      <h2>Conversor de Moedas (JavaScript)</h2>
-      <p>Converte valores de Reais para Dólar ou Euro usando taxas fixas.</p>
-      <a class="btn" href="conversor.html" target="_blank">Ver Projeto</a>
-    </div>
-  </div>
+  </section>
+
+  <section class="courses">
+    <h2>Cursos</h2>
+    <p>🚀 JavaScript Completo - Udemy (em andamento)<br>
+       🐍 Python para Iniciantes - Curso Online (em andamento)</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contato</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu email" required>
+      <textarea placeholder="Sua mensagem" rows="4" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
   <footer>
-    <p class="social">
-      <a href="https://github.com/julio-motta" target="_blank">GitHub</a> |
-      <a href="#" target="_blank">LinkedIn (adicione aqui)</a>
-    </p>
-    <p>© 2025 Julio Cesar. Todos os direitos reservados.</p>
+    &copy; 2025 Julio Motta | Desenvolvido com paixão 💻❤️
   </footer>
 </body>
 </html>
